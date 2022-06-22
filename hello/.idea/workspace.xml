@@ -80,7 +80,12 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HelloGoodbye">
+    <configuration name="HelloGoodbye" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="HelloGoodbye" />
+      <module name="Algorithms, Part I" />
+      <method v="2" />
+    </configuration>
     <configuration name="HelloWorld" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="HelloWorld" />
       <module name="Algorithms, Part I" />
