@@ -1,9 +1,130 @@
 
 public class Patterns {
-	public static void palandromicPyramid( int n) {
+	public static void pascalsTriangle(int n) {
+		for(int i=0; i<n; i++) {
+			System.out.println();
+			for(int j=n; j>=i; j--) {
+				System.out.print(" ");
+			}
+			
+				int m = (int)Math.pow(11, i);
+				System.out.print(m);
+			
+		}
+	}
+	public static void invertedHalfPyramid(int n) {
 		for(int i=1; i<=n; i++) {
 			System.out.println();
-			for(int j=5; j>i; j--) {
+			for(int j=n; j>=i; j--) {
+				System.out.print(i);
+			}
+		}
+	}
+	public static void halfPyramid(int n) {
+		for(int i=1; i<=n; i++) {
+			System.out.println();
+			for(int j=1; j<=i; j++) {
+				System.out.print(j);
+			}
+		}
+	}
+	public static void printHollowRombus(int n) {
+		for(int i=1; i<=n; i++) {
+			System.out.println();
+			for(int j=5; j>=i; j--) {
+				System.out.print(" ");
+			}
+			for(int j=1; j<=n; j++) {
+				if(i==1||i==n) {
+					System.out.print("*");
+				}
+			     else if(j==1||j==n) {
+					 System.out.print("*");
+				 }
+				 else {
+					 System.out.print(" ");
+				 }
+			}
+		}
+	}
+	public static void printButterfly(int n) {
+		for(int i=1; i<=n; i++) {
+			System.out.println();
+			for(int j=1; j<=i; j++) {
+				
+					System.out.print("*" );
+				
+			}	
+				for(int j=1; j<=2*(n-i); j++) {
+					System.out.print(" ");
+				
+			}
+				for(int j=1; j<=i; j++) {
+					
+					System.out.print("*");
+				
+					
+			}
+		}
+		for(int i=n; i>=1; i--) {
+			System.out.println();
+			for(int j=1; j<=i; j++) {
+				
+					System.out.print("*");
+				
+				
+			}	
+				for(int j=1; j<=2*(n-i); j++) {
+					System.out.print(" ");
+				
+			}
+				for(int j=1; j<=i; j++) {
+					
+						System.out.print("*");
+					
+				}
+		}
+	}
+	public static void printDiamond(int n) {
+		for(int i =1; i<=n; i++) {
+			System.out.println();
+			for(int j =n; j>=i; j--) {
+				System.out.print(" ");
+			}
+			for(int j=1; j<=2*i-1; j++) {
+				System.out.print("*");
+			}
+		}
+		for(int i =n; i>=1; i--) {
+			System.out.println();
+			for(int j =n; j>=i; j--) {
+				System.out.print(" ");
+			}
+			for(int j=1; j<=2*i-1; j++) {
+				System.out.print("*");
+			}
+			
+		}
+	}
+	public static void printHollowButterfly( int n) {
+		for(int i=1; i<=2*n; i++) {
+			System.out.println();
+			for(int j=1;j<=2*n; j++) {
+           if(j==1||j==2*n||j==i||j==(2*n-i+1)) {
+        	   System.out.print("*");
+           }
+           else {
+        	   System.out.print(" ");
+           }
+			}
+		}
+		
+		
+	}
+			public static void palandromicPyramid( int n) {
+		for(int i=1; i<=n; i++) {
+			System.out.println();
+			for(int j=n; j>i; j--) {
 				System.out.print(" ");
 			}
 			for(int j=0; j<i; j++) {
@@ -152,6 +273,13 @@ public class Patterns {
           printRombus(5);
           printNumberPyramid(5);
           palandromicPyramid(5);
+          printButterfly(4);
+          printDiamond(4);
+          printHollowButterfly(4);
+          printHollowRombus(5);
+          halfPyramid(5);
+          invertedHalfPyramid(4);
+          pascalsTriangle(6);
 	}
 
 }
