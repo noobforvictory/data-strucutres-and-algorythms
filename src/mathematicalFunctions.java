@@ -16,12 +16,12 @@ public class mathematicalFunctions {
 		int n=0;
 		int diviser=0;
 		if(a-b>0) {
-			n=a;
-		}
-		else { 
 			n=b;
 		}
-		for(int i=1; i<n; i++) {
+		else { 
+			n=a;
+		}
+		for(int i=1; i<=n; i++) {
 			if(a%i==0 && b%i==0) {
 				 diviser =i;
 			}
