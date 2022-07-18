@@ -32,23 +32,24 @@ public class NQueenProblem {
 		}
 		// upward left
 		int i =r;
-		for(int j=col ; i>=0 && j<board.length; i-- , j--) {
+		for(int j=col ; i>=0 && j>=0; i-- , j--) {
 			if(board[i][j] == 'Q')return false;
 			
 		}
 		// upward right
-		
+		i=r;
 		for(int j=col; i>=0 && j<board.length; i--, j++) {
 			if(board[i][j] == 'Q')return false;
 			
 		}
 		//lower left
-		
+		i=r;
 		for(int j=col; i<board.length && j>=0; i++, j--) {
 			if(board[i][j]=='Q')return false;
 			
 		}
 		//lower right
+		i=r;
 		for(int j=col; i<board.length && j<board.length; i++,j++) {
 			if(board[i][j]=='Q')return false;
 			
@@ -75,7 +76,7 @@ public static void solveNQueen(int n){
 	helper(board, allBoards,0);
 }
 	public static void main(String[] args) {
-		solveNQueen(4);
+		solveNQueen(n);
 		
 
 	}
