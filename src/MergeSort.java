@@ -34,6 +34,7 @@ public class MergeSort {
 	public static void main(String[] args) {
 		int[] arr = {2,5,3,8,6,1};
 		divide(arr,0,arr.length-1);
+//when u pass an array as an argument in a function u r passing its address not the array so any changes made in the array in the function changes the orignal arr
 		for(int i=0;i<arr.length;i++) {
 			System.out.print(arr[i]+" ");
 		}
