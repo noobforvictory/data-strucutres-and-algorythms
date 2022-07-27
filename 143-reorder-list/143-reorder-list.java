@@ -10,7 +10,7 @@
  */
 class Solution {
     public  void join(ListNode l1, ListNode l2){
-         if(l1 != null ){
+         
         while(  l2!=null){
            ListNode l1_next = l1.next;
            
@@ -21,12 +21,10 @@ class Solution {
             l1 = l1_next;
             l2 = l2_next;
         }
-         }
+         
     }
     public  ListNode reverse(ListNode head){
-        if(head==null || head.next==null) {
-		return head;
-	}
+      
 	ListNode prevNode = head;
 	ListNode currentNode = head.next;
 	
