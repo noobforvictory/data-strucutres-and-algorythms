@@ -114,19 +114,20 @@ public int getSize() {
 	return size;
 }
 	public static void main(String[] args) {
-		LL list =new LL();
-		list.addFirst("hi");
-		list.addLast("denis");
-		list.addLast("victor");
-		list.addFirst("oh");
-		list.removeFirst();
-		list.removeLast();
-		list.printList();
-		list.addInMiddle(2,"surname");
-		list.printList();
-		System.out.println(list.getSize());
-		//list.reverseList();
-	list.head = list.reverseRecursive(list.head);
-		list.printList();
+//		LL list =new LL();
+//		list.addFirst("hi");
+//		list.addLast("denis");
+//		list.addLast("victor");
+//		list.addFirst("oh");
+//		list.removeFirst();
+//		list.removeLast();
+//		list.printList();
+//		list.addInMiddle(2,"surname");
+//		list.printList();
+//		System.out.println(list.getSize());
+//		list.reverseList();
+//	//list.head = list.reverseRecursive(list.head);
+//		list.printList();
+		
   }
 }
