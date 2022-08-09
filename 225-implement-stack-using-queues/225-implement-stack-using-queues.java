@@ -1,22 +1,19 @@
 import java.util.Queue;
 class MyStack {
      Queue<Integer> q1;
-       Queue<Integer> q2 ; 
+        
     public MyStack() {
          q1 = new ArrayDeque<>();
-         q2 = new ArrayDeque<>();
+         
     }
     
     public void push(int x) {
         if(q1.isEmpty()){
             q1.add(x);
         }else{
-            while(!q1.isEmpty()){
-                q2.add(q1.remove());
-            }
             q1.add(x);
-            while(!q2.isEmpty()){
-                q1.add(q2.remove());
+            for(int i=0;i<q1.size()-1; i++){
+                q1.add(q1.remove());
             }
         }
     }
